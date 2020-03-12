@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+    <!-- //FAVICON -->
+    <!-- Title Page-->
+    <title>{{pageTitle}}</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="/css/font-face.css" rel="stylesheet" media="all">
+    <link href="/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="/css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="au theme template">
+        <meta name="author" content="Hau Nguyen">
+        <meta name="keywords" content="au theme template">
+        <!-- FAVICON -->
+        <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+        <!-- //FAVICON -->
+        <!-- Title Page-->
+        <title>{{pageTitle}}</title>
+    
+        <!-- Fontfaces CSS-->
+        <link href="/css/font-face.css" rel="stylesheet" media="all">
+        <link href="/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <link href="/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+        <link href="/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    
+        <!-- Bootstrap CSS-->
+        <link href="/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    
+        <!-- Vendor CSS-->
+        <link href="/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+        <link href="/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+        <link href="/vendor/wow/animate.css" rel="stylesheet" media="all">
+        <link href="/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+        <link href="/vendor/slick/slick.css" rel="stylesheet" media="all">
+        <link href="/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+        <link href="/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    
+        <!-- Main CSS-->
+        <link href="/css/theme.css" rel="stylesheet" media="all">
+
+        <!--Nhub CSS-->
+        <link rel="stylesheet" href="/css/nhub/style.css">
+    
+    </head>
+    
+    <body class="animsition" >
+    
+        <!-- modal small -->
+        <div class="modal fade" id="smallmodal" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="smallmodalLabel">Update Profile Picture</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <strong>Select An Image And Click Submit</strong>
+    
+                        </p>
+                        <form action="/students/changePic/{{student._id}}" method="POST" enctype="multipart/form-data">
+                            <input type="file" name="profilePic" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end modal small -->
+
+        <!-- modal exeat -->
+        <div class="modal fade" id="exeatmodal" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="smallmodalLabel">Apply for Exeat</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <form action="/students/exeat/{{student._id}}" method="POST">
+                            <label for="e_from"><strong>From:</strong></label>
+                            <input id="e_from" type="date" name="timeFrom" required> <br>
+                            <label for="e_to"><strong>To:</strong></label>
+                            <input id = "e_to" type="date" name="timeTo"required>
+                            <br><br>
+                            <label for="e_reason"><strong>Reason:</strong></label><br>
+                            <textarea name="reason" id="e_reason" cols="70" rows="10" style="border: solid 1px black; margin-left:10%;"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Apply</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end modal exeat -->

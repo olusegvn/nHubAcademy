@@ -1,0 +1,212 @@
+<!-- HEADER DESKTOP-->
+<header class="header-desktop3 d-none d-lg-block">
+    <div class="section__content section__content--p35">
+        <div class="header3-wrap">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="images/icon/logo-white.png" alt="Logo" />
+                </a>
+            </div>
+            <div class="header__navbar">
+                <ul class="list-unstyled">
+                    <li class="has-sub">
+                        <a href="/admin/dashboard">
+                            <i class="fas fa-tachometer-alt"></i>Dashboard
+                            <span class="bot-line"></span>
+                        </a>
+
+                    </li>
+                    <li class="has-sub">
+                        <a href="/">
+                            <i class="fas fa-arrow-left"></i>Back Home
+                            <span class="bot-line"></span>
+                        </a>
+
+                    </li>
+
+
+
+            </div>
+            <div class="header__tool">
+
+                <div class="account-wrap">
+                    <div class="account-item account-item--style2 clearfix js-item-menu">
+                        <div class="image">
+                            <img src="{{admin.profilePicture}}" alt="pp" />
+                        </div>
+                        <div class="content">
+                            <a class="js-acc-btn" href="#">{{fullName}}</a>
+                        </div>
+                        <div class="account-dropdown js-dropdown">
+                            <div class="info clearfix">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="{{admin.profilePicture}}" alt="Profile pic" />
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h5 class="name">
+                                        <p>{{fullName}}</p>
+                                    </h5>
+                                    <span class="email">{{admin.email}}</span>
+                                </div>
+                            </div>
+                            <div class="account-dropdown__body">
+                                <div class="account-dropdown__item">
+                                    <a href="/admin/profile">
+                                    <i class="fas fa-tachometer-alt"></i></i>Dashboard</a>
+                                </div>
+                                <div class="account-dropdown__item">
+                                    <a href="/admin/profile">
+                                    <i class="fas fa-user"></i>Profile</a>
+                                </div>
+                                <div class="account-dropdown__item">
+                                    <a href="/admin/internshipApplications">
+                                        <i class="far fa-address-book"></i>Internship Applications</a>
+                                </div>
+                                <div class="account-dropdown__item">
+                                    <a href="/admin/attendance">
+                                        <i class="far fa-address-book"></i>Exeat Requests</a>
+                                </div>
+                                <div class="account-dropdown__item">
+                                    <a href="/forgotPassword">
+                                        <i class="fas fa-sign-out-alt"></i>Change Password</a>
+                                </div>
+
+
+                            </div>
+                            <div class="account-dropdown__footer">
+                                <a href="/admin/logout">
+                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER DESKTOP-->
+
+<!-- HEADER MOBILE-->
+<header class="header-mobile header-mobile-2 d-block d-lg-none">
+    <div class="header-mobile__bar">
+        <div class="container-fluid">
+            <div class="header-mobile-inner">
+                <a class="logo" href="/">
+                    <img src="/img/favicon.png" alt="logo" />
+                </a>
+                <button class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar-mobile">
+        <div class="container-fluid">
+            <ul class="navbar-mobile__list list-unstyled">
+                <li class="has-sub">
+                    <a class="js-arrow" href="/admin/dashboard">
+                        <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="sub-header-mobile-2 d-block d-lg-none">
+    <div class="header__tool">
+
+        <div class="header-button-item js-item-menu">
+            <i class="zmdi zmdi-settings"></i>
+            <div class="setting-dropdown js-dropdown">
+                <div class="account-dropdown__body">
+                    <div class="account-dropdown__item">
+                        <a href="/admin/profile">
+                        <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                    </div>
+                    <div class="account-dropdown__item">
+                        <a href="/admin/profile">
+                    <i class="zmdi zmdi-account"></i>Profile</a>
+                    </div>
+                    <div class="account-dropdown__item">
+                        <a href="/admin/internshipApplications">
+                            <i class="far fa-address-book"></i>Internship Applications</a>
+                    </div>
+                    <div class="account-dropdown__item">
+                        <a href="/admin/exeatApplications">
+                        <i class="far fa-user"></i>Exeat Applications</a>
+                    </div>
+                    <div class="account-dropdown__item">
+                        <a href="/forgotPassword">
+                            <i class="far fa-user"></i>Change Password</a>
+                    </div>
+
+                    <div class="account-dropdown__item">
+                        <a href="/admin/logout">
+                            <i class="zmdi zmdi-settings"></i>Logout</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="account-wrap">
+            <div class="account-item account-item--style2 clearfix js-item-menu">
+                <div class="image">
+                    <img src="{{admin.profilePicture}}" alt="pp" />
+                </div>
+                <div class="content">
+                    <p>{{fullName}}</p>
+                </div>
+                <div class="account-dropdown js-dropdown">
+                    <div class="info clearfix">
+                        <div class="image">
+
+                            <img src="{{admin.profilePicture}}" alt="pp" />
+
+                        </div>
+                        <div class="content">
+                            <h5 class="name">
+                                <p>{{fullName}}</p>
+                            </h5>
+                            <span class="email">{{admin.email}}</span>
+                        </div>
+                    </div>
+                    <div class="account-dropdown__body">
+                        <div class="account-dropdown__item">
+                            <a href="/admin/dashboard">
+                            <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </div>
+                        <div class="account-dropdown__item">
+                            <a href="/admin/profile">
+                                <i class="zmdi zmdi-account"></i>Profile</a>
+                        </div>
+                        <div class="account-dropdown__item">
+                            <a href="/admin/internshipApplications">
+                                <i class="far fa-address-book"></i>Internship Applications</a>
+                        </div>
+                        <div class="account-dropdown__item">
+                            <a href="/admin/exeatApplications">
+                                <i class="far fa-user"></i>Exeat Applications</a>
+                        </div>
+                        <div class="account-dropdown__item">
+                            <a href="/forgotPassword">
+                                <i class="far fa-user"></i>Change Password</a>
+                        </div>
+
+
+                    </div>
+                    <div class="account-dropdown__footer">
+                        <a href="/admin/logout">
+                            <i class="zmdi zmdi-power"></i>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END HEADER MOBILE -->

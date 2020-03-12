@@ -1,0 +1,38 @@
+<!-- PAGE CONTAINER-->
+<div class="page-container2">
+    <!-- MAIN CONTENT -->
+    <div class="main-content" style="overflow: scroll">
+        {{!-- <div class="section__content section__content--p30"> --}}
+        {{!-- <div class="container-fluid"> --}}
+        {{!-- <div class="row"> --}}
+
+        <div class="container">
+            {{>default/messages}}
+            {{!-- table here --}}
+            <h3>ALL INTERNS</h3>
+            <table class="table table-bordered">
+                <thead class="bg-dark text-center">
+                    <tr class="text-white">
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Intern Id</th>
+                        <th>Institution</th>
+
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    {{#each interns}}
+                    <tr>
+                        
+                        <td>{{firstName}}</td>
+                        <th>{{lastName}}</th>
+                        <td>{{internId}}</td>
+                        <td>{{institution}}</td>
+
+                    </tr>
+                    {{/each}}
+
+                </tbody>
+            </table>
+            {{!-- table Ends --}}
+        </div>

@@ -1,0 +1,160 @@
+<!-- PAGE CONTAINER-->
+<div class="page-container2">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div class="section__content section__content--p30">
+            <div class="container-fluid">
+                <div class="row">
+                    {{>default/messages}}
+                    <div class="col-md-6">
+                        <!-- PROFILE PHOTO -->
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title mb-3">Profile</strong>
+                            </div>
+                            <div class="card-body">
+                                <div class="mx-auto d-block">
+                                    <img class=" mx-auto d-block" src="{{intern.profilePicture}}" alt="Card image cap">
+
+                                    <div class="location text-sm-center">
+                                    </div>
+                                    <hr>
+
+
+                                    <button type="button" class="btn btn-outline-dark btn-lg btn-block"
+                                        data-toggle="modal" data-target="#smallmodal">UPDATE PROFILE PICTURE</button>
+
+                                </div>
+                                <hr>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <!-- PROFILE INFO -->
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">INFORMATION</strong>
+                            </div>
+                            <div class="card-body">
+                                <div
+                                    class="sufee-alert alert with-close alert-primary alert-dismissible fade show nhub-badge">
+                                    <span class="badge badge-pill badge-dark ">NAME</span> {{fullName}}
+
+
+                                </div>
+
+                                <div
+                                    class="sufee-alert alert with-close alert-primary alert-dismissible fade show nhub-badge">
+                                    <span class="badge badge-pill badge-dark">CATEGORY</span>
+                                    {{intern.userType}}
+
+                                </div>
+                                <div
+                                    class="sufee-alert alert with-close alert-primary alert-dismissible fade show nhub-badge">
+                                    <span class="badge badge-pill badge-dark ">INTERN ID</span>
+                                    {{intern.internId}}
+
+                                </div>
+                                <div
+                                    class="sufee-alert alert with-close alert-primary alert-dismissible fade show nhub-badge">
+                                    <span class="badge badge-pill badge-dark">EMAIL</span>
+                                    {{intern.email}}
+
+                                </div>
+                                <div
+                                    class="sufee-alert alert with-close alert-primary alert-dismissible fade show nhub-badge">
+                                    <span class="badge badge-pill badge-dark">STARTING DATE</span>
+                                    {{intern.startingDate}}
+
+
+                                </div>
+                                <div
+                                    class="sufee-alert alert with-close alert-primary alert-dismissible fade show nhub-badge">
+                                    <span class="badge badge-pill badge-dark">ENDING DATE</span> {{intern.endingDate}}
+
+
+                                </div>
+                                <div
+                                    class="sufee-alert alert with-close alert-primary alert-dismissible fade show nhub-badge">
+                                    <span class="badge badge-pill badge-dark">VIEW APPLICATION LETTER</span>
+                                    <a href="{{intern.applicationLetter}}">
+                                        <button class="btn btn-outline-dark btn-lg btn-block" type="btn">VIEW</button>
+                                    </a>
+
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    {{!-- cc2 --}}
+                    <div class="col-md-6">
+                        <!-- PROFILE INFO -->
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">ATTENDANCE</strong> <em>{{date}}</em>
+                            </div>
+                            <div class="card-body">
+                                <form action="/interns/signIn/{{intern._id}}" method="POST">
+
+                                    <div class="sufee-alert alert with-close alert-dismissible fade show">
+                                        <button type="submit" id="btnControl1"
+                                            class="btn btn-outline-success btn-lg btn-block">SIGN IN</button>
+                                    </div>
+                                </form>
+                                <form action="/interns/signOut/{{intern._id}}" method="POST">
+
+                                    <div class="sufee-alert alert with-close  alert-dismissible fade show">
+                                        <button type="submit" id="btnControl2"
+                                            class="btn btn-outline-warning btn-lg btn-block">SIGN OUT</button>
+
+
+                                    </div>
+                                </form>
+
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    {{!-- //cc2 --}}
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright">
+                            <p>Copyright © 2019 All rights reserved <a href="/">nHub Academy</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // MAIN CONTENT -->
+
+
+
+
+
+
+
+
+
+</div>
+</div>

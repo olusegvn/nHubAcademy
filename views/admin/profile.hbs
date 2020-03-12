@@ -1,0 +1,96 @@
+<!-- PAGE CONTAINER-->
+<div class="page-container2">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div class="section__content section__content--p30">
+            <div class="container-fluid">
+                <div class="row">
+                    {{>default/messages}}
+                    <div class="col-md-6">
+                        <!-- PROFILE PHOTO -->
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title mb-3">Profile</strong>
+                            </div>
+                            <div class="card-body">
+                                <div class="mx-auto d-block">
+                                    <img class=" mx-auto d-block" src="{{admin.profilePicture}}" alt="Card image cap">
+
+                                    <div class="location text-sm-center">
+                                        <hr>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-dark btn-lg btn-block"
+                                        data-toggle="modal" data-target="#smallmodal">UPDATE PROFILE PICTURE</button>
+
+
+                                </div>
+                                <hr>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <!-- PROFILE INFO -->
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">INFORMATION</strong>
+                            </div>
+                            <div class="card-body">
+                                <div
+                                    class="sufee-alert alert with-close alert-primary alert-dismissible fade show nhub-badge">
+                                    <span class="badge badge-pill badge-dark">ADMIN USERNAME</span> {{fullName}}
+
+
+                                </div>
+
+                                <div
+                                    class="sufee-alert alert with-close alert-primary alert-dismissible fade show nhub-badge">
+                                    <span class="badge badge-pill badge-dark">CATEGORY</span>
+                                    {{admin.userType}}
+
+                                </div>
+                                <div
+                                    class="sufee-alert alert with-close alert-primary alert-dismissible fade show nhub-badge">
+                                    <span class="badge badge-pill badge-dark">EMAIL</span>
+                                    {{admin.email}}
+
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright">
+                            <p>Copyright © 2019 All rights reserved <a href="/">nHub Academy</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // MAIN CONTENT -->
+
+
+
+
+
+
+
+
+
+</div>
+</div>

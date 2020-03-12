@@ -1,0 +1,274 @@
+<body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <style></style>
+    {{!-- <header> --}}
+        {{!-- <div class="container"> --}}
+            {{!-- <div class="row">
+                <div class="col-md-6">
+                    <div class="block">
+                        <p><a href="#">My Account</a></p>
+                        <!-- Extra small button group -->
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                ENGLISH <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">Hausa</a></li>
+                                <li><a href="#">Jarawa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="block align-right">
+                        <a href="#">Help center</a>
+                        <a href="#">online support</a> --}}
+                        <!-- Registration Section -->
+                        <!------------------------------------ Register and login -------------------------------------------------------->
+                        {{!-- <div class="btn-group">
+
+                            <button class="btn btn-default  btn-xs dropdown-toggle"
+                                style="border-right: 1px solid rgb(218, 217, 217); border-radius: 0px;" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                REGISTER <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-toggle="modal" data-target="#registerModal1"
+                                        data-whatever="@mdo">INTERN</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#registerModal2"
+                                        data-whatever="@mdo">PRIVATE STUDENT</a></li>
+                            </ul>
+
+                        </div> --}}
+
+                        {{!-- <div class="btn-group">
+
+                            <button class="btn btn-default  btn-xs dropdown-toggle"
+                                style="border-right: 1px solid rgb(218, 217, 217); border-radius: 0px;" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-lock"></i>LOG IN <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-toggle="modal" data-target="#loginModal1"
+                                        data-whatever="@mdo">INTERN </a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#loginModal2"
+                                        data-whatever="@mdo">PRIVATE STUDENT </a></li>
+                            </ul>
+
+                        </div> --}}
+
+
+                        <!-- Login Option -->
+                        <div class="modal fade" id="loginModal1" tabindex="-1" role="dialog"
+                            aria-labelledby="loginLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content" id="inputPassword2">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="login-label">Login</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="rex-forms" method="POST" action="/login">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="recipient-name" name="email" placeholder="Email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" id="recipient-name" name="password" placeholder="Password" required>
+                                            </div>
+                                            <div class="modal-footer">
+                                    
+                                                <div>
+                                                    <p class='forgot-password'>Forgot Password? <a href="/forgotPassword">CLICK HERE</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <button type="submit" class="rex-bottom-medium rex-btn-icon">
+                                                <span style="display: inline-flex"><span class="rex-btn-text">Login</span>
+                                                    <span class="rex-btn-text-icon non-display"><i class="fa fa-arrow-circle-o-right"></i></span></span>
+                                            </button>
+                                    
+                                    
+                                        </form>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="loginModal2" tabindex="-1" role="dialog"
+                            aria-labelledby="loginLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="loginLabel">Private Student Login</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="rex-forms" method="POST" action="/login">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="recipient-name"
+                                                    name="email" placeholder="Email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" id="pass_word"
+                                                    name="password" placeholder="Password" required>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div>
+                                                    <p>Forgot Password? <a href="/students/forgotPassword">CLICK
+                                                            HERE</a> </p>
+                                                </div>
+
+                                                <button type="submit" class="rex-bottom-medium rex-btn-icon">
+                                                    <span class="rex-btn-text">Login</span>
+                                                    <span class="rex-btn-text-icon"><i
+                                                            class="fa fa-arrow-circle-o-right"></i></span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        {{!-- admin login--}}
+                        <div class="modal fade" id="loginModal3" tabindex="-1" role="dialog"
+                            aria-labelledby="loginLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="loginLabel">Admin Login</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="rex-forms" method="POST" action="/login">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="recipient-name"
+                                                    name="email" placeholder="Email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" id="pass_word"
+                                                    name="password" placeholder="Password" required>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div>
+                                                    <p>Forgot Password? <a href="/admin/forgotPassword">CLICK HERE</a>
+                                                    </p>
+                                                </div>
+
+                                                <button type="submit" class="rex-bottom-medium rex-btn-icon">
+                                                    <span class="rex-btn-text">Login</span>
+                                                    <span class="rex-btn-text-icon"><i
+                                                            class="fa fa-arrow-circle-o-right"></i></span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        {{!-- // admin login --}}
+
+                        {{!-- ==================================================end of register and login  --}}
+
+                    {{!-- </div> --}}
+                {{!-- </div> --}}
+            {{!-- </div> --}}
+    {{!-- </header> --}}
+    <main class="rex-main-content">
+        <!-- Add your site or application content here -->
+        <!-- Navigation Html
+=================== -->
+        {{>default/messages}}
+        <div class="main-menu "
+            style=" z-index:1000; background-color: rgba(255, 253, 253, 0.959); width:100%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo">
+                            <a href="/">
+                                <img class="img-responsive" src="/img/about_us/logo.png" alt="">
+
+                                <!-- <img class="img-responsive" src="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" alt=""> -->
+                            </a>
+                        </div>
+                        <div class="menu-container" style="margin-left:20%">
+                            <div class="menu">
+                                <ul class="main-ul">
+                                    <li><a class="active" href="/">Home</a></li>
+
+                                    <li>
+                                        <a href="javascript:void(0)" class='dp-item'>- Apply</a>
+                                        <ul>
+                                            <li><a href="/internshipApplication">For Internship</a></li>
+                                            <li><a href="/allCourses">As Private Student</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:void(0)" class='dp-item'>- Courses</a>
+                                        <ul>
+                                            <li>
+                                                <h6>Courses</h6>
+                                                <ul>
+                                                    <li><a href="/frontEndDevelopment">FRONT-END
+                                                            Development</a></li>
+                                                    <li><a href="/lampStack">LAMP Stack</a></li>
+                                                    <li><a href="/introductionToProgramming">introduction To
+                                                            Programming</a></li>
+
+                                                    <li>
+                                                        <a href="/djangoFrameWork">DJANGO Framework</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h6>More Courses</h6>
+                                                <ul>
+                                                    <li><a href="/nodeJsFrameWork">NODEJS Framework</a></li>
+                                                    <li><a href="/meanStack">MEAN Stack</a></li>
+                                                    <li><a href="/cyberSecurity">CYBER Security</a></li>
+                                                    <li><a href="/mobileAppDevelopment">MOBILE APP Development</a></li>
+                                                    <li><a href="/virtualReality">Virtual Reality</a></li>
+                                                </ul>
+                                                <ul>
+
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        {{#if login}}
+                                    <li><a href="/myAccount">My Account</a></li>
+                                    <li><a href="/logout">Log Out</a></li>
+                                    {{else}}
+
+                                    </li><li>
+                                        <a href="#" data-toggle="modal" data-target="#loginModal1" data-whatever="@mdo">Login </a>
+                    
+                                            {{!-- <li><a href="#" data-toggle="modal" data-target="#loginModal1" data-whatever="@mdo">INTERN </a></li> --}}
+
+                                    </li>
+                                    {{/if}}
+                                    <li><a href="/about">About</a></li>
+                                    {{!-- <li><a href="#footerr">Contact</a></li> --}}
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

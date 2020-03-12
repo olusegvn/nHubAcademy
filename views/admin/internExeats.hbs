@@ -1,0 +1,60 @@
+<!-- PAGE CONTAINER-->
+<div class="page-container2">
+    <!-- MAIN CONTENT -->
+    <div class="main-content" style="overflow: scroll">
+        {{!-- <div class="section__content section__content--p30"> --}}
+        {{!-- <div class="container-fluid"> --}}
+        {{!-- <div class="row"> --}}
+
+        <div class="container">
+            {{>default/messages}}
+            {{!-- table here --}}
+            <h3>INTERN EXEAT REQUESTS</h3>
+            <form action="/admin/deleteAllInternExeatRequests" method="POST">
+                <button class="btn btn-warning float-right mb-1" type="submit">CLEAR</button>
+            </form>
+            <table class="table table-bordered">
+                <thead class="bg-dark text-center">
+                    <tr class="text-white">
+                        {{!-- <th>Date</th> --}}
+                        <th>Name</th>
+                        <th>Intern Id</th>
+                        <th>Reason</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Approved</th>
+                        <th>Actions</th>
+
+
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    {{#each exeats}}
+                    <tr>
+                        {{!-- <td>{{date}}</td> --}}
+                        <td>{{fullName}}</td>
+                        <td>{{internId}}</td>
+                        <td>{{reason}}</td>
+                        <th>{{timeFrom}}</th>
+                        <th>{{timeTo}}</th>
+                        <td>{{isApproved}}</td>
+
+                        <td class="d-flex">
+                            <form action="/admin/approveInternExeat/{{_id}}" method="POST">
+                                <button type="submit" class="btn btn-success">APPROVE</button>
+
+                            </form>
+                         
+                            <form action="/admin/rejectInternExeat/{{id}}?newMethod=DELETE" method="POST">
+                                <button class="btn btn-danger" type="submit">REJECT & DELETE</button>
+                            </form>
+                        </td>
+
+
+                    </tr>
+                    {{/each}}
+
+                </tbody>
+            </table>
+            {{!-- table Ends --}}
+        </div>

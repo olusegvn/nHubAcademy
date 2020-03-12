@@ -1,0 +1,33 @@
+<div class="container" id="registration">
+    <div class="row">
+        <div class="container"><h1 class="display-2 text-center">DJANGO FRAMEWORK PAYMENT</h1>
+                <hr>
+                
+        </div>
+        <div class="col-md-3 col-sm-offset-5">
+            <h3 class="display-4 text-center">AMOUNT: N60,000.00</h3>
+            <form  name='myForm' action="paystack/pay" method="POST" >
+                <div class="container col-md-12">
+
+                <div class="form-group" style="margin-bottom: 30px;">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" name="full_name" placeholder="Enter your Full Name" class="form-control" id="full_name"
+                        required>
+                </div>
+               
+                <div class="form-group" style="margin-bottom: 30px;">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter your email" class="form-control" id="email" required>
+                </div>
+                    <button type="submit"class="rex-bottom-medium rex-btn-icon">
+                         <span class="rex-btn-text" >Submit</span>
+                    <span class="rex-btn-text-icon"><i class="fa fa-arrow-circle-o-right"></i></span>
+                    </button>
+                    <input type="hidden" name="amount" id="amount" value="60000">
+                </div>
+            </form>
+    </div>
+    </div>
+    
+</div>
+

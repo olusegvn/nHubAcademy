@@ -1,0 +1,26 @@
+<div class="container">
+
+
+    {{#if success_messages}}
+
+        <div class="alert alerter alert-success alert-dismissible" >
+            <strong>{{success_messages}}</strong>
+
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+    {{/if}}
+
+    {{#if error_messages}}
+
+        <div class="alert alerter alert-danger alert-dismissible">
+            <strong>{{error_messages}}</strong>
+
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {{/if}}
+</div>

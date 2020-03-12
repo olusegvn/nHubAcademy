@@ -1,0 +1,54 @@
+<!-- MENU SIDEBAR-->
+<aside class="menu-sidebar2">
+    <div class="logo">
+        <a href="/">
+            <img src="/img/favicon.png" alt="logo" />
+        </a>
+    </div>
+    <div class="menu-sidebar2__content js-scrollbar1">
+        <div class="account2">
+            <div class="image img-cir img-120">
+                <img src="{{student.profilePicture}}" alt="pp" />
+            </div>
+            <h4 class="name">{{student.fullName}}</h4>
+            <a href="/students/logout">Sign out</a>
+        </div>
+        <nav class="navbar-sidebar2">
+            <ul class="list-unstyled navbar__list">
+                <li class="active has-sub">
+
+                    <a class="js-arrow" href="/students/profile">
+                        <i class="fas fa-user"></i>Profile
+
+                    </a>
+                </li>
+
+                <li class="active has-sub">
+                    <a href="#" class="js-arrow" data-target="#exeatmodal" data-toggle="modal">
+                        <i class="far fa-address-book"></i>Apply for Exeat
+   
+                    </a>
+
+                </li>
+                <li class="active has-sub">
+                    <a class="js-arrow" href="/forgotPassword">
+                        <i class="fas fa-key"></i>Change Password
+                
+                    </a>
+                
+                </li>
+                <li class="active has-sub">
+                    <a class="js-arrow" href="/students/logout">
+                        <i class="fas fa-sign-out-alt"></i>Log Out
+
+                    </a>
+
+                </li>
+
+
+
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- END MENU SIDEBAR-->

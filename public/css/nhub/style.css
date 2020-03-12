@@ -1,0 +1,427 @@
+/* =================== preloader =============*/
+
+/*====================== preloader ending =================]*/
+
+*{
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+.dp-item:hover::before {
+  /* content: '-'; */
+}
+
+.white {
+  background-color: white;
+  color: #ff8533 !important;
+}
+
+.nhub-color {
+  color: #ff8533 !important;
+}
+
+
+
+.partners img {
+  height: 120px;
+  width: 200px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#partners {
+  /* height: 20px;
+    margin-bottom: 10%; */
+}
+
+.sidebar-nav ul .sidebar-item.selected > .sidebar-link {
+  background: #ff8533;
+  color: white;
+}
+
+.active1 {
+  background-color: #ff8533 !important;
+  color: white !important;
+}
+
+.active1 i {
+  color: white !important;
+}
+
+.active1 :hover {
+  background-color: #ff8533 !important;
+  color: white !important;
+}
+
+.nactive {
+  color: #ff8533 !important;
+  background-color: white !important;
+  text-align: left !important;
+  align-content: left;
+}
+
+.nactive :hover {
+}
+
+/* .nactive i,
+.nactive span {
+  align-content: left;
+} */
+
+/*  // error 404 pageStyle */
+/* £££££££££££££££££££££££££££££££££££££3 */
+
+.error-box {
+  height: 100%;
+  position: fixed;
+  background: url(../../../../assets/images/background/error-bg.jpg) no-repeat
+    center center #fff;
+  width: 100%;
+}
+.error-box .error-body {
+  padding-top: 5%;
+}
+.error-box .error-title {
+  font-size: 210px;
+  font-weight: 900;
+  text-shadow: 4px 4px 0 #fff, 6px 6px 0 #343a40;
+  line-height: 210px;
+}
+/* // error 404 style */
+/* **************************************************   payment pages style */
+.register {
+  text-align: center;
+  /* margin-top: 60px;
+    margin-left: 600px; */
+  /* margin: 60px 400px; */
+}
+.inputClass {
+  pointer-events: none;
+}
+
+#registration {
+  margin-bottom: 50px;
+  /* width: 50%; */
+  /* background-color: #ff8533; */
+  /* opacity: 0.5; */
+  /* padding: 60px 0px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px; */
+}
+h2 {
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 0 50px;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 20px;
+  line-height: 3;
+}
+
+
+/* **************************************************   payment pages style */
+
+/* ===========================================reset password css========================== */
+#img {
+  border-radius: 50%;
+}
+#btn {
+  font-size: 20px;
+  background-color: #ff8533;
+  padding: 7px 40px;
+  color: darkslategrey;
+  border-radius: 20px;
+}
+.form-group label {
+  font-size: 20px;
+  color: gray;
+  text-decoration: none;
+}
+#inputPassword,
+#inputPassword1 {
+  font-size: 20px;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+/* ===============================End of reset password styles===================== */
+
+/* =================================change======================================================================= */
+
+.backGround {
+  background: url("https://media.giphy.com/media/OPe0iOKxATz2g/giphy.gif");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-size: 100% 700px;
+  background-attachment: fixed;
+  /* position: static; */
+}
+
+.backGround {
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.904);
+
+  /* opacity: 0; */
+}
+
+.white-row {
+  background-color: rgba(255, 253, 253, 0.959);
+}
+
+/* uiburfbksedjbijedtrkbvdjfhbvjdhfbujhgbeh */
+#img_success {
+  height: 200px;
+}
+#btn-container{
+  margin: auto;
+}
+#btn_success {
+  color: white;
+  margin: auto;
+}
+#btn_success a {
+  text-decoration: none;
+  color: white;
+}
+/* jkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+/* Exeat Time Parameters*/
+
+#e_from,#e_to
+{
+   border: 1px solid black;
+   font-size: 135%;
+   margin-bottom: 2%;
+   border-radius: 5px;
+   width: 52%;
+   font-weight: lighter;
+   padding: 0 10px;
+}
+#e_to
+{
+  margin-left: 6.5%;
+  background-color: whitesmoke;
+  margin-left: 56.%;
+  border: none;
+  border-bottom: solid 1px #ff8533;
+  border-radius: 5px;
+  font-weight: lighter;
+
+}
+#e_from
+{
+  background-color: whitesmoke;
+  margin-left: 3.5%;
+  border: none;
+  border-bottom: solid 1px #ff8533;
+  border-radius: 5px;
+
+}
+#e_reason{
+  /* background-color: rgba(255, 255, 255, 0.582); */
+  background-color: whitesmoke;
+  margin-left:10%; 
+  width:70%; height: 50%; 
+  border-radius: 5px;
+  border:none;
+  border-bottom: solid 1px #ff8533;
+
+}
+
+#news-button{
+  background-color: #ff8533;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+@media only screen and (max-width: 2000px){
+  #news-input{
+    width: 261%;
+    margin-left: 60%;
+    margin-right: 0px;
+  }
+  #news-button{
+    width: 10%;
+    margin-right: 8%;
+
+  }
+  #inputPassword2{
+    width: 100%;
+    /* margin-right: 20px; */
+    margin-right: 200%;
+    margin-left: -10%;
+  }
+  #inputPassword2 h4{
+    font-size: 20px
+  }
+  #inputPassword2 button{
+    font-size: 20px;
+    width: 50%;
+    margin-top: -75px;
+    height: 20%;
+  }
+  #inputPassword2 button span{
+
+    display: inline-block;
+  }
+  .forgot-password{
+    margin-left: -150%;
+  }
+  #login-label{
+    margin-right: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 1024px){
+  #news-input{
+    width: 210%;
+    margin-left: 60%;
+    margin-right: 0px;
+  }
+  #news-button{
+    width: 10%;
+    margin-right: 8%;
+  }
+  #inputPassword2{
+    width: 120%;
+    /* margin-right: 20px; */
+    margin-right: 200%;
+    margin-left: -25%;
+  }
+  #inputPassword2 h4{
+    font-size: 20px
+  }
+  #inputPassword2 button{
+    font-size: 20px;
+    width: 50%;
+    margin-top: -75px;
+    height: 20%;
+  }
+  #inputPassword2 button span{
+
+    display: inline-block;
+  }
+  .forgot-password{
+    margin-left: -150%;
+  }
+  #login-label{
+    margin-right: 50%;
+  }
+}
+@media only screen and (max-width: 768px){
+  #news-input{
+    width: 200%;
+    margin-left: 15%;
+    margin-right: 0px;
+  }
+  #news-button{
+    width: 10%;
+}
+}
+
+@media only screen and (max-width: 375px) {
+
+  #news-input{
+    width: 170%;
+    margin-left: 15%;
+    font-size: 5px!important;
+  }
+  #news-button{
+    width: 18%;
+    margin-right: 2%;
+
+  }
+  #inputPassword2{
+    width: 100%;
+    /* margin-right: 20px; */
+    margin-right: 200%;
+    margin-left: -25%;
+  }
+  #inputPassword2 button{
+    font-size: 20px;
+    width: 50%;
+    margin-top: -75px;
+    height: 20%;
+    margin-left: 25%;
+  }
+  #inputPassword2 button span{
+
+    display: inline-block;
+  }
+  .forgot-password{
+    margin-left: -30%;
+  }
+  #recipient-name{
+    width: 73%;
+    margin-left: 27%;
+  }
+  #login-label{
+    margin-left:25%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+
+  #news-input{
+    width: 200%;
+    margin-left: 15%;
+    font-size: 5px!important;
+  }
+  #news-button{
+    width: 18%;
+    margin-right: 2%;
+
+  }
+  #inputPassword2{
+    width: 100%;
+    /* margin-right: 20px; */
+    margin-right: 200%;
+    margin-left: -25%;
+  }
+  #inputPassword2 button{
+    font-size: 20px;
+    width: 50%;
+    margin-top: -75px;
+    height: 20%;
+    margin-left: 25%;
+  }
+  #inputPassword2 button span{
+
+    display: inline-block;
+  }
+  .forgot-password{
+    margin-left: -30%;
+  }
+  #recipient-name{
+    width: 73%;
+    margin-left: 27%;
+  }
+  #login-label{
+    margin-left:25%;
+  }
+}
+@media only screen and (max-width: 320px) {
+
+  #news-input{
+    width: 140%;
+    margin-left: 15%;
+    font-size: 0.1!important;
+    font-weight: 0;
+    font-size-adjust: 0.1;
+  }
+  #news-button{
+    width: 18%;
+    margin-right: 2%;
+
+  }
+}

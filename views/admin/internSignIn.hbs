@@ -1,0 +1,38 @@
+<!-- PAGE CONTAINER-->
+<div class="page-container2">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        {{!-- <div class="section__content section__content--p30"> --}}
+        {{!-- <div class="container-fluid"> --}}
+        {{!-- <div class="row"> --}}
+
+        <div class="container" style="overflow: scroll">
+            {{>default/messages}}
+            {{!-- table here --}}
+            <h3>INTERNS SIGNED IN</h3>
+            <form action="/admin/deleteAllInternsSignIn" method="POST">
+                <button class="btn btn-warning float-right mb-1" type="submit">CLEAR</button>
+            </form>
+            <table class="table table-bordered">
+                <thead class="bg-dark text-center">
+                    <tr class="text-white">
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Intern Id</th>
+
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    {{#each internsIn}}
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{fullName}}</td>
+                        <td>{{internId}}</td>
+
+                    </tr>
+                    {{/each}}
+
+                </tbody>
+            </table>
+            {{!-- table Ends --}}
+        </div>
